@@ -1,0 +1,60 @@
+{
+  "name": "@xyz/newsletter",
+  "version": "1.0.1",
+  "description": "A terminal-based newsletter reader",
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "newsletter": "./bin/index.js"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "prepublishOnly": "npm test",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "files": [
+    "bin/",
+    "issues/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.2",
+    "marked": "^15.0.11",
+    "marked-terminal": "^7.3.0",
+    "node-fetch": "^2.6.7",
+    "ora": "^6.3.1",
+    "socket.io-client": "^4.7.2",
+    "terminal-link": "^4.0.0",
+    "uuid": "^9.0.0",
+    "ws": "^8.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "keywords": [
+    "newsletter",
+    "terminal",
+    "cli",
+    "markdown",
+    "reading"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyzhub/newsletter-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyzhub/newsletter-client/issues"
+  },
+  "homepage": "https://github.com/xyzhub/newsletter-client#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
